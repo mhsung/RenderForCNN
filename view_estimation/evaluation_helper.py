@@ -286,7 +286,7 @@ def viewpoint_pred(img_filenames, class_idx, output_result_files):
         probs_3dview_all[i] = probs_3dview
 
     for i in range(len(img_filenames)):
-        print 'Saving "' + output_result_files[i] + '"'
+        print 'Saving "' + output_result_files[i] + '.npy"'
         np.save(output_result_files[i], probs_3dview_all[i])
 
     # OUTPUT: log file
